@@ -1,0 +1,238 @@
+.clear-fix {
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar {
+  position: relative;
+}
+.navbar-links {
+  /* navbar */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: ease 0.5s;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.navbar-links ul {
+  /* navbar ul (the list)*/
+  transform: translateY(-20px);
+  list-style: none;
+}
+.navbar-links li {
+  /* navbar li  (the points)*/
+  display: inline;
+}
+.navbar-links a {
+  /* navbar a (the links)*/
+  font-size: 40px;
+  padding: 0 5%;
+  color: #fff;
+}
+.show-links {
+  /* show the navbar */
+  height: 90px;
+  padding: 1%;
+}
+
+#profile-picture {
+  /* profile-picture */
+  width: 15%;
+  border: solid 3px black;
+  border-radius: 50%;
+  user-select: none;
+  margin-top: 130px;
+}
+
+#main-header {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  font-size: 100px;
+}
+#links {
+  /* links */
+  margin-top: 5%;
+  width: 50%;
+  margin: auto;
+}
+#links ul {
+  /* links ul (the list)*/
+  list-style: none;
+  padding: 0;
+}
+#links li {
+  /* links li (the points)*/
+  font-size: 35px;
+  font-weight: 500;
+  margin: 3%;
+  padding: 1% 0;
+  border: solid;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  transition: all 400ms ease;
+}
+#links a {
+  /* links a (the links)*/
+  width: 100%;
+  text-decoration: none;
+  padding-left: 3%;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: all 400ms ease;
+}
+#checkbox {
+  /* checkbox */
+  display: none;
+}
+.hamburger {
+  /* hamburger */
+  position: fixed;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.line {
+  /* lines for checkbox */
+  position: absolute;
+  width: 42px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: transform 0.25s, opacity 0.35s;
+}
+.line--top {
+  /* top line */
+  transform: translateY(-14px);
+}
+.line--bottom {
+  /* bottom line */
+  transform: translateY(14px);
+}
+
+#checkbox:checked ~ .line--top {
+  transform: rotate(45deg);
+}
+#checkbox:checked ~ .line--middle {
+  transform: translateX(32px);
+  opacity: 0;
+}
+#checkbox:checked ~ .line--bottom {
+  transform: rotate(-45deg);
+}
+#main-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    /* checkbox */
+    padding: 33px 20px;
+  }
+
+  .navbar-links {
+    /* navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: ease 0.5s;
+    background: linear-gradient(
+      60deg,
+      rgba(84, 58, 183, 1) 0%,
+      rgba(0, 172, 193, 1) 100%
+    );
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .navbar-links ul {
+    /* navbar ul (the list)*/
+    transform: translateY(-20px);
+    list-style: none;
+  }
+  .navbar-links li {
+    /* navbar li  (the points)*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-20px);
+  }
+  .navbar-links a {
+    /* navbar a (the links)*/
+    font-size: 40px;
+    padding: 0 5%;
+    color: #fff;
+  }
+  .show-links {
+    /* show the navbar */
+    height: 110px;
+    padding: 1%;
+  }
+  #profile-picture {
+    /* profile-picture */
+    width: 50%;
+    border: solid 3px black;
+    border-radius: 50%;
+    margin-top: 5%;
+  }
+
+  #main-header {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+  }
+  #links {
+    /* links */
+    margin-top: 5%;
+    width: 100%;
+  }
+  #links ul {
+    /* links ul (the list)*/
+    list-style: none;
+    padding: 0;
+  }
+  #links li {
+    /* links li (the points)*/
+    font-size: 35px;
+    font-weight: 500;
+    margin: 3%;
+    padding: 1% 0;
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  #links a {
+    /* links a (the links)*/
+    width: 100%;
+    text-decoration: none;
+    padding-left: 3%;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+}
