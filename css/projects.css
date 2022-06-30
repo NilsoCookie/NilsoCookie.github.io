@@ -97,6 +97,51 @@ body {
   font-size: 100px;
   margin-top: 130px;
 }
+#disclaimer {
+  /* disclaimer */
+  font-size: 20px;
+}
+#projects {
+  /* projects section */
+  width: 80%;
+  margin: 3% auto;
+}
+#projects div {
+  /* project */
+  width: 21%;
+  height: 150px;
+  margin: 1.5%;
+  display: inline-block;
+  padding: 0.5%;
+  border: solid #333;
+  border-radius: 10px;
+}
+#projects div:hover {
+  /* project hovered */
+  transition: ease 0.3s;
+  transform: scale(1.2);
+}
+
+#projects h1 {
+  /* project title */
+  font-size: 30px;
+  margin: 0;
+}
+#projects h1 i {
+  /* project title icon */
+  margin: 0.5%;
+}
+#projects p {
+  /* project description */
+  font-size: 20px;
+}
+.icons i {
+  /* icons */
+  margin-right: 1.5%;
+  font-size: 30px;
+  color: black;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     /* checkbox */
