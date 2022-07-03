@@ -45,6 +45,7 @@ body {
   font-size: 40px;
   padding: 0 5%;
   color: #fff;
+  font-family: "Neucha";
 }
 .show-links {
   /* show the navbar */
@@ -100,18 +101,19 @@ body {
 #disclaimer {
   /* disclaimer */
   font-size: 20px;
+  font-family: "Neucha";
 }
 #projects {
   /* projects section */
   width: 80%;
   margin: 3% auto;
+  display: inline-flex;
 }
 #projects div {
   /* project */
-  width: 21%;
-  height: 150px;
-  margin: 1.5%;
-  display: inline-block;
+  width: 300px;
+  height: 175px;
+  margin: 0 2%;
   padding: 0.5%;
   border: solid #333;
   border-radius: 10px;
@@ -126,6 +128,7 @@ body {
   /* project title */
   font-size: 30px;
   margin: 0;
+  font-family: "Neucha";
 }
 #projects h1 i {
   /* project title icon */
@@ -134,6 +137,7 @@ body {
 #projects p {
   /* project description */
   font-size: 20px;
+  font-family: "Neucha";
 }
 .icons i {
   /* icons */
@@ -191,5 +195,21 @@ body {
   #main-header {
     font-size: 80px;
     margin: 100px 0 50px;
+  }
+  #projects {
+    /* projects section */
+    width: 80%;
+    margin: 3% auto;
+    display: block;
+  }
+  #projects div {
+    /* projects */
+    margin: 10%;
+    padding: 2%;
+  }
+  #projects div:hover {
+    /* project hovered */
+    transition: ease 0.3s;
+    transform: scale(1);
   }
 }

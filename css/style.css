@@ -43,6 +43,7 @@ body {
 .navbar-links a {
   /* navbar a (the links)*/
   font-size: 40px;
+  font-family: "Neucha";
   padding: 0 5%;
   color: #fff;
 }
@@ -91,6 +92,7 @@ body {
 }
 #links a {
   /* links a (the links)*/
+  font-family: "Neucha";
   width: 100%;
   text-decoration: none;
   padding-left: 3%;
@@ -141,6 +143,7 @@ body {
   transform: rotate(-45deg);
 }
 #main-footer {
+  font-family: "Neucha";
   text-align: center;
   padding: 20px;
   margin-top: 40px;
