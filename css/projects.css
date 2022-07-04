@@ -107,7 +107,12 @@ body {
   /* projects section */
   width: 80%;
   margin: 3% auto;
+}
+#projects section {
   display: inline-flex;
+  width: 100%;
+  margin: 3% auto;
+  justify-content: center;
 }
 #projects div {
   /* project */
@@ -139,13 +144,24 @@ body {
   font-size: 20px;
   font-family: "Neucha";
 }
+.icons {
+  /* icons */
+  display: inline-block;
+  height: fit-content;
+}
 .icons i {
   /* icons */
   margin-right: 1.5%;
   font-size: 30px;
   color: black;
 }
-
+#main-footer {
+  font-family: "Neucha";
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 20px;
+}
 @media (max-width: 768px) {
   .hamburger {
     /* checkbox */
@@ -183,6 +199,7 @@ body {
   }
   .navbar-links a {
     /* navbar a (the links)*/
+    font-family: "Neucha";
     font-size: 40px;
     padding: 0 5%;
     color: #fff;
@@ -191,6 +208,7 @@ body {
     /* show the navbar */
     height: 110px;
     padding: 1%;
+    font-family: "Neucha";
   }
   #main-header {
     font-size: 80px;
