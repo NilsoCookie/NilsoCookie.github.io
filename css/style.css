@@ -108,11 +108,11 @@ body {
 }
 .hamburger {
   /* hamburger */
-  position: fixed;
   padding: 40px;
-  display: flex;
-  align-items: center;
   cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .line {
   /* lines for checkbox */
